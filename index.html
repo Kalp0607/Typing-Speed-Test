@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>Typing Speed Test</h1>
+      </header>
+      <section class="selectors">
+        <div class="level-select">
+          <button class="level-btn selected" data-level="easy">Easy</button>
+          <button class="level-btn" data-level="medium">Medium</button>
+          <button class="level-btn" data-level="hard">Hard</button>
+          <button class="level-btn" data-level="extreme">Extreme</button>
+        </div>
+        <div class="timer-select">
+          <button class="timer-btn selected" data-seconds="15">15s</button>
+          <button class="timer-btn" data-seconds="30">30s</button>
+          <button class="timer-btn" data-seconds="45">45s</button>
+          <button class="timer-btn" data-seconds="60">60s</button>
+        </div>
+      </section>
+      <section class="test-area">
+        <span class="timer-display" id="timerDisplay">Time: 15s</span>
+        <div class="paragraph" id="paragraph"></div>
+        <input
+          type="text"
+          id="inputBox"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Type here..."
+        />
+        <div class="stats">
+          <div>WPM: <span id="wpm">0</span></div>
+          <div>Accuracy: <span id="accuracy">100%</span></div>
+          <div>Mistakes: <span id="mistakes">0</span></div>
+        </div>
+        <button id="restartBtn" class="action-btn">Restart</button>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
